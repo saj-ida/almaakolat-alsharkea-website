@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>الوجبات - المأكولات الشرقية</title>
+  <link rel="stylesheet" href="Style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+  <!-- ===== شريط التنقل ===== -->
+  <nav>
+    <span class="nav-logo">🍴 المأكولات الشرقية</span>
+    <div class="nav-links">
+      <a href="home.html">الرئيسية</a>
+      <a href="AboutUs.html">من نحن</a>
+      <a href="Meals.html" class="active">الوجبات</a>
+    </div>
+  </nav>
+
+  <!-- ===== ترويسة الصفحة ===== -->
+  <div class="page-header">
+    <h1>قائمة الوجبات</h1>
+    <p>اختر وجبتك المفضلة من قائمتنا الشهية</p>
+  </div>
+
+  <main>
+
+    <!-- ===== جدول الوجبات 1.3 ===== -->
+    <div class="card">
+      <h2 class="section-title">الوجبات المتاحة</h2>
+
+      <table class="meals-table" id="mealsTable">
+        <thead>
+          <tr>
+            <th>الرمز</th>
+            <th>صورة</th>
+            <th>الوجبة</th>
+            <th>السعر</th>
+            <th>إظهار التفاصيل</th>
+            <th>اختيار</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <!-- وجبة 1 - مقلوبة -->
+          <tr class="meal-row">
+            <td class="meal-code">SF-001</td>
+            <td><img class="meal-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/320px-Good_Food_Display_-_NCI_Visuals_Online.jpg" alt="مقلوبة"/></td>
+            <td>مقلوبة</td>
+            <td class="meal-price">100,000 ل.س</td>
+            <td><button class="toggle-btn" data-target="detail-SF-001">التفاصيل</button></td>
+            <td><input type="checkbox" class="meal-check" data-id="SF-001" data-name="مقلوبة" data-price="100000"/></td>
+          </tr>
+          <tr class="detail-row" id="detail-SF-001" style="display:none;">
+            <td colspan="6">
+              <div class="detail-content">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/320px-Good_Food_Display_-_NCI_Visuals_Online.jpg" alt="مقلوبة"/>
+                <div class="detail-text">
+                  <h4>المطبخ: عربي | تصنيف: وجبات رئيسية</h4>
+                  <p><strong>المكونات:</strong></p>
+                  <ul>
+                    <li>دجاج أو لحم</li>
+                    <li>أرز</li>
+                    <li>باذنجان</li>
+                    <li>بهارات</li>
+                    <li>بصل وثوم</li>
+                    <li>مرق</li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- وجبة 2 - كبسة دجاج -->
+          <tr class="meal-row">
+            <td class="meal-code">SF-002</td>
+            <td><img class="meal-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/320px-Pizza-3007395.jpg" alt="كبسة دجاج"/></td>
+            <td>كبسة دجاج</td>
+            <td class="meal-price">115,000 ل.س</td>
+            <td><button class="toggle-btn" data-target="detail-SF-002">التفاصيل</button></td>
+            <td><input type="checkbox" class="meal-check" data-id="SF-002" data-name="كبسة دجاج" data-price="115000"/></td>
+          </tr>
+          <tr class="detail-row" id="detail-SF-002" style="display:none;">
+            <td colspan="6">
+              <div class="detail-content">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/320px-Pizza-3007395.jpg" alt="كبسة دجاج"/>
+                <div class="detail-text">
+                  <h4>المطبخ: خليجي | تصنيف: وجبات رئيسية</h4>
+                  <p><strong>المكونات:</strong></p>
+                  <ul>
+                    <li>دجاج أو لحم غنم</li>
+                    <li>أرز بسمتي</li>
+                    <li>بصل وثوم وطماطم</li>
+                    <li>بهارات كبسة</li>
+                    <li>زبيب ولوز</li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- وجبة 3 - شوربة فريكة -->
+          <tr class="meal-row">
+            <td class="meal-code">SF-003</td>
+            <td><img class="meal-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Spaghetti_bolognese_%28hozinja%29.jpg/320px-Spaghetti_bolognese_%28hozinja%29.jpg" alt="شوربة فريكة"/></td>
+            <td>شوربة فريكة</td>
+            <td class="meal-price">75,000 ل.س</td>
+            <td><button class="toggle-btn" data-target="detail-SF-003">التفاصيل</button></td>
+            <td><input type="checkbox" class="meal-check" data-id="SF-003" data-name="شوربة فريكة" data-price="75000"/></td>
+          </tr>
+          <tr class="detail-row" id="detail-SF-003" style="display:none;">
+            <td colspan="6">
+              <div class="detail-content">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Spaghetti_bolognese_%28hozinja%29.jpg/320px-Spaghetti_bolognese_%28hozinja%29.jpg" alt="شوربة فريكة"/>
+                <div class="detail-text">
+                  <h4>المطبخ: شامي | تصنيف: شوربات</h4>
+                  <p><strong>المكونات:</strong></p>
+                  <ul>
+                    <li>فريكة (قمح أخضر مجروش)</li>
+                    <li>دجاج أو لحم</li>
+                    <li>بصل</li>
+                    <li>بهارات</li>
+                    <li>زيت</li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- وجبة 4 - سلطة فتوش -->
+          <tr class="meal-row">
+            <td class="meal-code">SF-004</td>
+            <td><img class="meal-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Salad_garden_SFC.jpg/320px-Salad_garden_SFC.jpg" alt="سلطة فتوش"/></td>
+            <td>سلطة فتوش</td>
+            <td class="meal-price">50,000 ل.س</td>
+            <td><button class="toggle-btn" data-target="detail-SF-004">التفاصيل</button></td>
+            <td><input type="checkbox" class="meal-check" data-id="SF-004" data-name="سلطة فتوش" data-price="50000"/></td>
+          </tr>
+          <tr class="detail-row" id="detail-SF-004" style="display:none;">
+            <td colspan="6">
+              <div class="detail-content">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Salad_garden_SFC.jpg/320px-Salad_garden_SFC.jpg" alt="سلطة فتوش"/>
+                <div class="detail-text">
+                  <h4>المطبخ: لبناني | تصنيف: سلطات</h4>
+                  <p><strong>المكونات:</strong></p>
+                  <ul>
+                    <li>خس وبقدونس ونعناع</li>
+                    <li>طماطم وخيار وفجل</li>
+                    <li>خبز محمص (كروتون عربي)</li>
+                    <li>ليمون وزيت زيتون</li>
+                    <li>دبس الرمان</li>
+                    <li>سماق</li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- وجبة 5 - بقلاوة -->
+          <tr class="meal-row">
+            <td class="meal-code">SF-005</td>
+            <td><img class="meal-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/320px-Eq_it-na_pizza-margherita_sep2005_sml.jpg" alt="بقلاوة"/></td>
+            <td>بقلاوة</td>
+            <td class="meal-price">80,000 ل.س</td>
+            <td><button class="toggle-btn" data-target="detail-SF-005">التفاصيل</button></td>
+            <td><input type="checkbox" class="meal-check" data-id="SF-005" data-name="بقلاوة" data-price="80000"/></td>
+          </tr>
+          <tr class="detail-row" id="detail-SF-005" style="display:none;">
+            <td colspan="6">
+              <div class="detail-content">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/320px-Eq_it-na_pizza-margherita_sep2005_sml.jpg" alt="بقلاوة"/>
+                <div class="detail-text">
+                  <h4>المطبخ: شرقي | تصنيف: حلويات</h4>
+                  <p><strong>المكونات:</strong></p>
+                  <ul>
+                    <li>عجينة الفيلو (رقائق)</li>
+                    <li>مكسرات (فستق)</li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <!-- زر متابعة -->
+      <button class="continue-btn" id="continueBtn">متابعة ←</button>
+    </div>
+
+    <!-- ===== نموذج الطلب 1.4 ===== -->
+    <div class="card" id="orderForm" style="display:none;">
+      <h2 class="section-title">بيانات الطلب</h2>
+
+      <div class="form-group">
+        <label for="fullName">الاسم الكامل (بالإنجليزية)</label>
+        <input type="text" id="fullName" placeholder="مثال: Ahmad Mohammad"/>
+        <span class="error" id="nameError">الاسم يجب أن يحتوي على أحرف إنجليزية فقط مع مسافة واحدة بين الاسم والكنية</span>
+      </div>
+
+      <div class="form-group">
+        <label for="bankAccount">رقم الحساب المصرفي <span style="color:#c0392b">*</span> (6 أرقام)</label>
+        <input type="text" id="bankAccount" placeholder="مثال: 055555" maxlength="6"/>
+        <span class="error" id="bankError">رقم الحساب يجب أن يتكون من 6 أرقام بالضبط</span>
+      </div>
+
+      <div class="form-group">
+        <label for="orderDate">تاريخ الطلب (yyyy-mm-dd)</label>
+        <input type="text" id="orderDate" placeholder="مثال: 2026-05-10"/>
+        <span class="error" id="dateError">يرجى إدخال تاريخ صحيح بالصيغة yyyy-mm-dd</span>
+      </div>
+
+      <div class="form-group">
+        <label for="mobile">رقم الموبايل (Syriatel أو MTN)</label>
+        <input type="text" id="mobile" placeholder="مثال: 0944123456 أو 0988123456"/>
+        <span class="error" id="mobileError">رقم الموبايل يجب أن يبدأ بـ 094 أو 098 ويتكون من 10 أرقام</span>
+      </div>
+
+      <button class="submit-btn" id="submitBtn">إرسال الطلب</button>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 المأكولات الشرقية &mdash; جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script src="myFunctions.js"></script>
+</body>
+</html>
